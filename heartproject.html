@@ -1,0 +1,139 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="fonts/font-awesome.css">
+        <link href="css/bootstrap/bootstrap.css" rel="stylesheet" />
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        <title>
+        </title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                background-image: linear-gradient(to right,rgb(52, 52, 59), rgb(157, 64, 64));
+                background-size: cover;
+                overflow: hidden;
+                min-height: 100%;
+
+            }
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .img-cont{
+                width: fit-content;
+                height: fit-content;
+                border:none;
+                float: left;
+                margin-top: 5%;
+                margin-left: 5%;
+            }
+            .text-cont{
+                width: 700px;
+                height: 500px;
+                border:none;
+                float: left;
+                margin-top: 7%;
+                background-color:none;
+                box-sizing: 0 0 5px rgba(0,0,0,0.5);
+            }
+            .img{
+                width: 600px;
+                height: 500px;
+            }
+            p{
+                font-size:26px;
+                color: white;
+                text-align: justify;
+            }
+            .content .pp{
+                font-size:26px;
+                color: white;
+                text-align: justify;
+                margin-bottom: 5px;
+                line-height: 1.4;
+            }
+            #check{
+                display: none;
+                
+            }
+           
+            .content {
+                display: none;
+                transition: 0.5s linear;
+            }
+            label{
+                display: inline-block;
+                margin-top: 15px;
+                color:white ;
+                font-size:26px;
+                text-decoration: underline;
+                cursor: pointer;
+                font-weight: 600;
+
+            }
+            button{
+                justify-content: center;
+                font-size: 30px;
+                color:white;
+                background-color: red;
+                padding: 5px 50px;
+                border-radius: 5px;
+                border: none;
+            }
+            button:hover{
+                color:black;
+                background-color: white;
+            }
+            h1{
+                font-size: 46px;
+                color: white;
+                text-align: center;
+                font-style:initial;
+                font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            h1:hover{
+                font-weight: bold;
+                text-decoration: wavy;
+                color-scheme: ;
+            }
+            #check:checked~ .content{
+                display: block;
+            }
+            #check:checked~ label{
+                visibility: hidden;
+            }
+           /* #check:checked~ label::after{
+                content: 'show less';
+                display: block;
+                visibility: visible;
+            }*/
+        </style>
+       
+    </head> 
+    <body>
+        <div class="container-fluid main-container">
+            <div class="img-cont">
+                <img src="heart2-removebg-preview.png" alt="" class="img">
+            </div>
+            <div class="text-cont">
+                <input type="checkbox" id="check">
+                <h1> Heart Disease Prediction</h1>
+               <p>
+                 An effective heart disease prediction system (EHDPS) is developed using
+                random forest for predicting the risk level of heart disease.... <div class="content"><p class="pp">The system uses 4 major medical parameters 
+                    such as blood pressure, cholesterol, obesity and lack of physical exercise for prediction. 
+                   The EHDPS predicts the likelihood of patients getting heart disease.</p></div> 
+                   <label for="check">Read More</label>
+               <br> <br>
+               <center><a href="predict.html"><button>Predict</button></a></center>
+               </p>
+            </div>
+        </div>
+    </body>
+</html>
